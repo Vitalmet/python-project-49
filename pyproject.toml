@@ -23,6 +23,7 @@ dev = [
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 
+[tool.ruff]
 line-length = 80
 
 [lint.per-file-ignores]
