@@ -9,6 +9,7 @@ def run_game():
     print("Welcome to the Brain Even Game!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     for _ in range(3):
         number = random.randint(1, 100)

@@ -4,7 +4,7 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Vitalmet_python-project-49&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Vitalmet_python-project-49)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Vitalmet_python-project-49&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Vitalmet_python-project-49)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Vitalmet_python-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Vitalmet_python-project-49)
-[![asciicast](https://asciinema.org/session/new?t=SFMyNTY.g2gDaAJiAAQRHGJohHxNbgYAp2CIRZgBYgABUYA.Ejnl6o9HNY8Jc_h9P4UTBA0d9vj7T_T50I-KFmQ9EgM)](https://asciinema.org/connect/88a48d9f-2c20-4432-932a-78d1e32bab9d)
+[![asciicast](https://asciinema.org/a/BMHe2gH1nWCLZO3L1fs8Vj4aM)](https://asciinema.org/a/BMHe2gH1nWCLZO3L1fs8Vj4aM)
 [![asciicast](https://asciinema.org/a/sqe10uQKkJBVnCIn9OKI1lkFM)](https://asciinema.org/a/sqe10uQKkJBVnCIn9OKI1lkFM)
 [![asciicast]( https://asciinema.org/a/qwzRpeTXY4PIJZl78Nz1fRMfG)](https://asciinema.org/a/qwzRpeTXY4PIJZl78Nz1fRMfG)
 [![asciicast]( https://asciinema.org/a/zY18iavMMN0tGZdz1MJQhVrLo)]( https://asciinema.org/a/zY18iavMMN0tGZdz1MJQhVrLo)
