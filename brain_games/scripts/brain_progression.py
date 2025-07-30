@@ -25,12 +25,13 @@ def the_game_itself():
         print("Question:", ' '.join(map(str, progression_with_gap)))
 
         user_guess = input("What number is missing in the progression? ")
-
-
         if int(user_guess) == correct_answer:
             print("Correct!")
         else:
-            print(f"{user_guess} is wrong answer. ;(. Correct answer was '{correct_answer}'.")
+            print(
+                  f"{user_guess} is wrong answer. ;(." 
+                  f"Correct answer was '{correct_answer}'."
+            )
             print(f"Let's try again, {name}!")
             return
 
