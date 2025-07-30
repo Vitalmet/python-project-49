@@ -4,6 +4,7 @@ import random
 # Константы
 PROGRESSION_LENGTH = 10
 
+
 def arithmetic_progression(start, difference, num_terms):
     return [start + i * difference for i in range(num_terms)]
 
@@ -16,7 +17,11 @@ def the_game_itself():
     for _ in range(3):  # Можно задать 3 попытки или сколько посчитаете нужным
         start = random.randint(1, 10)
         difference = random.randint(1, 10)
-        progression = arithmetic_progression(start, difference, PROGRESSION_LENGTH)
+        progression = arithmetic_progression(
+            start,
+            difference,
+            PROGRESSION_LENGTH
+        )
 
         # Выбираем случайную позицию в прогрессии, чтобы скрыть ее
         hidden_index = random.randint(0, PROGRESSION_LENGTH - 1)
