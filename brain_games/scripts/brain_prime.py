@@ -11,9 +11,10 @@ def is_prime(n):
 
 
 def game():
-    print("Welcome to the Brain Prime Game!")
+    print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     for _ in range(3):  # 3 попытки для игры
         number = random.randint(1, 100)
