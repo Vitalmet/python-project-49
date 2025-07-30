@@ -1,4 +1,3 @@
-import random
 import secrets
 
 
@@ -16,8 +15,8 @@ def the_game_itself():
     print(f"Hello, {name}!")
 
     for _ in range(3):  # Можно задать 3 попытки или сколько посчитаете нужным
-        start = random.randint(1, 10)
-        difference = random.randint(1, 10)
+        start = secrets.randbelow(10) + 1
+        difference = secrets.randbelow(10) + 1
         progression = arithmetic_progression(
             start,
             difference,
