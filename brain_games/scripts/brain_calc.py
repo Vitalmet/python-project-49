@@ -18,6 +18,7 @@ def run_game():
     print("Welcome to the Brain Calculator Game!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
+    print("What is the result of the expression?")
 
     for _ in range(3):
         question, correct_answer = generate_question()
