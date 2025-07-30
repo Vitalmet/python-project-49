@@ -19,7 +19,7 @@ def the_game_itself():
         progression = arithmetic_progression(start, difference, PROGRESSION_LENGTH)
 
         # Выбираем случайную позицию в прогрессии, чтобы скрыть ее
-        hidden_index = random.randint(0, len(progression) - 1)
+        hidden_index = random.randint(0, PROGRESSION_LENGTH - 1)
         correct_answer = progression[hidden_index]
 
         # Подготавливаем строку для вывода пользователю с пропуском
