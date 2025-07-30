@@ -1,6 +1,9 @@
 import random
 
 
+# Константы
+PROGRESSION_LENGTH = 10
+
 def arithmetic_progression(start, difference, num_terms):
     return [start + i * difference for i in range(num_terms)]
 
@@ -13,15 +16,15 @@ def the_game_itself():
     for _ in range(3):  # Можно задать 3 попытки или сколько посчитаете нужным
         start = random.randint(1, 10)
         difference = random.randint(1, 10)
-        progression = arithmetic_progression(start, difference, 10)
+        progression = arithmetic_progression(start, difference, PROGRESSION_LENGTH)
 
         # Выбираем случайную позицию в прогрессии, чтобы скрыть ее
-        HIDDEN_INDEX = random.randint(0, len(progression) - 1)
-        correct_answer = progression[HIDDEN_INDEX]
+        hidden_index = random.randint(0, len(progression) - 1)
+        correct_answer = progression[hidden_index]
 
         # Подготавливаем строку для вывода пользователю с пропуском
         progression_with_gap = progression.copy()
-        progression_with_gap[HIDDEN_INDEX] = '..'
+        progression_with_gap[hidden_index] = '..'
         print("Question:", ' '.join(map(str, progression_with_gap)))
 
         user_guess = input("What number is missing in the progression? ")
