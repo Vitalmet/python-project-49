@@ -1,4 +1,5 @@
 import random
+import secrets
 
 
 # Константы
@@ -24,7 +25,7 @@ def the_game_itself():
         )
 
         # Выбираем случайную позицию в прогрессии, чтобы скрыть ее
-        hidden_index = random.randint(0, PROGRESSION_LENGTH - 1)
+        hidden_index = secrets.randbelow(PROGRESSION_LENGTH)
         correct_answer = progression[hidden_index]
 
         # Подготавливаем строку для вывода пользователю с пропуском
