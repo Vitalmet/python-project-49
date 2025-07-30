@@ -9,7 +9,6 @@ def the_game_itself():
     print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
-    print("What number is missing in the progression?")
 
     for _ in range(3):  # Можно задать 3 попытки или сколько посчитаете нужным
         start = random.randint(1, 10)
@@ -23,9 +22,10 @@ def the_game_itself():
         # Подготавливаем строку для вывода пользователю с пропуском
         progression_with_gap = progression.copy()
         progression_with_gap[hidden_index] = '..'
-        print("Progression:", ' '.join(map(str, progression_with_gap)))
+        print("Question:", ' '.join(map(str, progression_with_gap)))
 
         user_guess = input("What number is missing in the progression? ")
+
 
         if int(user_guess) == correct_answer:
             print("Correct!")
