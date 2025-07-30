@@ -1,4 +1,4 @@
-import random
+import secrets
 
 
 def is_prime(n):
@@ -17,7 +17,7 @@ def game():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     for _ in range(3):  # 3 попытки для игры
-        number = random.randint(1, 100)
+        number = secrets.randbelow(100) + 1
         print(f"Question: {number}")
 
         answer = input("Your answer (yes/no): ").strip().lower()

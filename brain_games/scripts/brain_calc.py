@@ -1,4 +1,4 @@
-import random
+import secrets
 import operator
 
 
@@ -9,9 +9,9 @@ def generate_question():
         '*': operator.mul
     }
 
-    num1 = random.randint(1, 10)
-    num2 = random.randint(1, 10)
-    op = random.choice(list(operations.keys()))
+    num1 = secrets.randbelow(10) + 1
+    num2 = secrets.randbelow(10) + 1
+    op = secrets.choice(list(operations.keys()))
     question = f"{num1} {op} {num2}"
     correct_answer = operations[op](num1, num2)
     return question, correct_answer

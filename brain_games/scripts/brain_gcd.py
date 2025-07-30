@@ -1,4 +1,4 @@
-import random
+import secrets
 
 
 def greatest_common_divisor(num1, num2):
@@ -16,8 +16,8 @@ def run_game():
     print("Find the greatest common divisor of given numbers.")
 
     for _ in range(3):
-        num1 = random.randint(1, 100)
-        num2 = random.randint(1, 100)
+        num1 = secrets.randbelow(100) + 1
+        num2 = secrets.randbelow(100) + 1
         print(f"Question: {num1} {num2}")
         correct_answer = greatest_common_divisor(num1, num2)
         answer = int(input("Your answer: "))
