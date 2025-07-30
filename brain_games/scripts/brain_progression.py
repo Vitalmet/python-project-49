@@ -16,12 +16,12 @@ def the_game_itself():
         progression = arithmetic_progression(start, difference, 10)
 
         # Выбираем случайную позицию в прогрессии, чтобы скрыть ее
-        hidden_index = random.randint(0, len(progression) - 1)
-        correct_answer = progression[hidden_index]
+        HIDDEN_INDEX = random.randint(0, len(progression) - 1)
+        correct_answer = progression[HIDDEN_INDEX]
 
         # Подготавливаем строку для вывода пользователю с пропуском
         progression_with_gap = progression.copy()
-        progression_with_gap[hidden_index] = '..'
+        progression_with_gap[HIDDEN_INDEX] = '..'
         print("Question:", ' '.join(map(str, progression_with_gap)))
 
         user_guess = input("What number is missing in the progression? ")
