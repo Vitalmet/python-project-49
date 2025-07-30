@@ -8,9 +8,10 @@ def greatest_common_divisor(num1, num2):
     return num1
 
 def run_game():
-    print("Welcome to the Brain GCD Game!")
+    print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
+    print("Find the greatest common divisor of given numbers.")
 
     for _ in range(3):
         num1 = random.randint(1, 100)

@@ -6,6 +6,6 @@
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Vitalmet_python-project-49&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Vitalmet_python-project-49)
 [![asciicast](https://asciinema.org/a/BMHe2gH1nWCLZO3L1fs8Vj4aM)](https://asciinema.org/a/BMHe2gH1nWCLZO3L1fs8Vj4aM)
 [![asciicast](https://asciinema.org/a/8DsX1dR08yi0zYoJOUZssHfRK)](https://asciinema.org/a/8DsX1dR08yi0zYoJOUZssHfRK)
-[![asciicast]( https://asciinema.org/a/qwzRpeTXY4PIJZl78Nz1fRMfG)](https://asciinema.org/a/qwzRpeTXY4PIJZl78Nz1fRMfG)
+[![asciicast](https://asciinema.org/a/f419lA5E9eEz85r7VPV2mI2Ug)](https://asciinema.org/a/f419lA5E9eEz85r7VPV2mI2Ug)
 [![asciicast]( https://asciinema.org/a/zY18iavMMN0tGZdz1MJQhVrLo)]( https://asciinema.org/a/zY18iavMMN0tGZdz1MJQhVrLo)
 [![asciicast]( https://asciinema.org/a/PZZTSkRiMYbcdrjmghoquSPnz)]( https://asciinema.org/a/PZZTSkRiMYbcdrjmghoquSPnz)
