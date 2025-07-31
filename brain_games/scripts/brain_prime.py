@@ -11,16 +11,22 @@ def is_prime(n):
     return True
 
 
+def generate_question():
+    number = secrets.randbelow(100) + 1
+    question = number
+    correct_answer = "yes" if is_prime(number) else "no"
+    return question, correct_answer
+
+
 def game():
     name = welcome_user()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     for _ in range(3):  # 3 попытки для игры
-        number = secrets.randbelow(100) + 1
-        print(f"Question: {number}")
+        question, correct_answer = generate_question()
+        print(f"Question: {question}")
 
         answer = input("Your answer (yes/no): ").strip().lower()
-        correct_answer = "yes" if is_prime(number) else "no"
 
         if answer == correct_answer:
             print("Correct!")

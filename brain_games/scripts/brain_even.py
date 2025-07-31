@@ -2,8 +2,11 @@ from brain_games.cli import welcome_user, congratulate_user, inform_failure
 import secrets
 
 
-def is_even(number):
-    return number % 2 == 0
+def is_even():
+    number = secrets.randbelow(100) + 1
+    question = number
+    correct_answer = "yes" if number % 2 == 0 else "no"
+    return question, correct_answer
 
 
 def run_game():
@@ -11,11 +14,10 @@ def run_game():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
     for _ in range(3):
-        number = secrets.randbelow(100) + 1
-        print(f"Question: {number}")
+        question, correct_answer = is_even()
+        print(f"Question: {question}")
         answer = input("Your answer (yes or no): ").strip().lower()
 
-        correct_answer = "yes" if is_even(number) else "no"
 
         if answer == correct_answer:
             print("Correct!")
