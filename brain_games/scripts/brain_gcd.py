@@ -13,7 +13,7 @@ def greatest_common_divisor(num1, num2):
 def generate_question():
     num1 = secrets.randbelow(100) + 1
     num2 = secrets.randbelow(100) + 1
-    question = f"Question: {num1}  {num2}"
+    question = f"{num1}  {num2}"
     correct_answer = str(greatest_common_divisor(num1, num2))
     return question, correct_answer
 
