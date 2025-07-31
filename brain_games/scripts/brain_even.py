@@ -1,3 +1,4 @@
+from brain_games.cli import welcome_user
 import secrets
 
 
@@ -6,10 +7,8 @@ def is_even(number):
 
 
 def run_game():
-    print("Welcome to the Brain Even Game!")
-    name = input("May I have your name? ")
-    print(f"Hello, {name}!")
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    name = welcome_user()
+    print('Answer "yes" if the number is even, otherwise answer "no"')
 
     for _ in range(3):
         number = secrets.randbelow(100) + 1

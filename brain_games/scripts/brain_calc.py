@@ -1,3 +1,4 @@
+from brain_games.cli import welcome_user
 import secrets
 import operator
 
@@ -18,9 +19,7 @@ def generate_question():
 
 
 def run_game():
-    print("Welcome to the Brain Calculator Game!")
-    name = input("May I have your name? ")
-    print(f"Hello, {name}!")
+    name = welcome_user()
     print("What is the result of the expression?")
 
     for _ in range(3):

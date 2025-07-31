@@ -1,3 +1,4 @@
+from brain_games.cli import welcome_user
 import secrets
 
 
@@ -10,9 +11,7 @@ def arithmetic_progression(start, difference, num_terms):
 
 
 def the_game_itself():
-    print("Welcome to the Brain Games!")
-    name = input("May I have your name? ")
-    print(f"Hello, {name}!")
+    name = welcome_user()
 
     for _ in range(3):  # Можно задать 3 попытки или сколько посчитаете нужным
         start = secrets.randbelow(10) + 1

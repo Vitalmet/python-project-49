@@ -1,3 +1,4 @@
+from brain_games.cli import welcome_user
 import secrets
 
 
@@ -10,9 +11,7 @@ def greatest_common_divisor(num1, num2):
 
 
 def run_game():
-    print("Welcome to the Brain Games!")
-    name = input("May I have your name? ")
-    print(f"Hello, {name}!")
+    name = welcome_user()
     print("Find the greatest common divisor of given numbers.")
 
     for _ in range(3):
