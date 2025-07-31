@@ -18,7 +18,6 @@ def generate_question():
     return question, correct_answer
 
 
-
 def run_game():
     name = welcome_user()
     print("Find the greatest common divisor of given numbers.")

@@ -18,7 +18,6 @@ def run_game():
         print(f"Question: {question}")
         answer = input("Your answer (yes or no): ").strip().lower()
 
-
         if answer == correct_answer:
             print("Correct!")
         else:
