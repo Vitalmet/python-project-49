@@ -1,4 +1,4 @@
-from brain_games.cli import welcome_user
+from brain_games.cli import welcome_user, congratulate_user, inform_failure
 import secrets
 
 
@@ -25,14 +25,10 @@ def game():
         if answer == correct_answer:
             print("Correct!")
         else:
-            print(
-                  f"'{answer}' is wrong answer ;(. "
-                  f"Correct answer was '{correct_answer}'."
-            )
-            print(f"Let's try again, {name}!")
+            inform_failure(name, answer, correct_answer)
             return
 
-    print(f"Congratulations, {name}!")
+    congratulate_user(name)
 
 
 def main():
