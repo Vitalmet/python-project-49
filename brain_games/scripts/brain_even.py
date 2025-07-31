@@ -8,7 +8,7 @@ def is_even(number):
 
 def run_game():
     name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     for _ in range(3):
         number = secrets.randbelow(100) + 1
