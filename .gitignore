@@ -1,2 +1,6 @@
 .venv
 *.cast
+brain_calc
+brain_gcd
+brain_prime
+brain_progression
